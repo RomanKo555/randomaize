@@ -45,8 +45,9 @@ def get_random_number():
     </head>
     <body>
         <div class="container">
+            <div class="message">Візьми своє число від 1 до 6</div>
+            <div class="message">Лабораторна робота №2</div>
             <div class="number">{random_number}</div>
-            <div class="message">Just take your random number between 1 and 6</div>
         </div>
     </body>
     </html>
