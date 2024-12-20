@@ -59,8 +59,8 @@ def get_random_number():
 
 
 
-if __name__ == "__main__":
-    port = 46038
-    host = "127.0.0.1"
-    print(f"Starting server on {host}:{port}")
-    uvicorn.run(app, host=host, port=port)
+# if __name__ == "__main__":
+#     port = 46038
+#     host = "127.0.0.1"
+#     print(f"Starting server on {host}:{port}")
+#     uvicorn.run(app, host=host, port=port)
