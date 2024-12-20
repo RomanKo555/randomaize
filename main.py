@@ -4,7 +4,7 @@ import random
 
 app = FastAPI()
 
-@app.get("/", response_class=HTMLResponse)
+@app.head("/", response_class=HTMLResponse)
 def get_random_number():
     random_number = random.randint(1, 6)
     html_content = f"""
