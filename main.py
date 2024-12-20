@@ -1,3 +1,6 @@
+import os
+
+import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 import random
@@ -53,3 +56,11 @@ def get_random_number():
     </html>
     """
     return html_content
+
+
+
+if __name__ == "__main__":
+    port = 46038
+    host = "127.0.0.1"
+    print(f"Starting server on {host}:{port}")
+    uvicorn.run(app, host=host, port=port)
